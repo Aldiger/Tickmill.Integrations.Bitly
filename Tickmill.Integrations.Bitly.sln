@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.API", "src\API\Bitly.API\Bitly.API.csproj", "{D6983234-299D-490E-AC3A-C95E1CC44F04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B9105696-EB78-4244-9EE2-8C326AE91B25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BF3B9BE3-66CA-4A8E-A648-780878DB9E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.Core", "Bitly.Core\Bitly.Core.csproj", "{F2E523AF-BC0C-4146-B891-6F031E6CA7E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.Tests.Unit", "Bitly.Tests.Unit\Bitly.Tests.Unit.csproj", "{FA76E9FF-8349-46F5-82FB-1A7FAF0837AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.Tests.Integration", "Bitly.Tests.Integration\Bitly.Tests.Integration.csproj", "{3BFE13A6-877F-48C0-9679-F82837C9CCED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6983234-299D-490E-AC3A-C95E1CC44F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6983234-299D-490E-AC3A-C95E1CC44F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6983234-299D-490E-AC3A-C95E1CC44F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6983234-299D-490E-AC3A-C95E1CC44F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E523AF-BC0C-4146-B891-6F031E6CA7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E523AF-BC0C-4146-B891-6F031E6CA7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E523AF-BC0C-4146-B891-6F031E6CA7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E523AF-BC0C-4146-B891-6F031E6CA7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA76E9FF-8349-46F5-82FB-1A7FAF0837AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA76E9FF-8349-46F5-82FB-1A7FAF0837AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA76E9FF-8349-46F5-82FB-1A7FAF0837AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA76E9FF-8349-46F5-82FB-1A7FAF0837AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BFE13A6-877F-48C0-9679-F82837C9CCED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BFE13A6-877F-48C0-9679-F82837C9CCED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BFE13A6-877F-48C0-9679-F82837C9CCED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BFE13A6-877F-48C0-9679-F82837C9CCED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6983234-299D-490E-AC3A-C95E1CC44F04} = {B9105696-EB78-4244-9EE2-8C326AE91B25}
+		{F2E523AF-BC0C-4146-B891-6F031E6CA7E8} = {B9105696-EB78-4244-9EE2-8C326AE91B25}
+		{FA76E9FF-8349-46F5-82FB-1A7FAF0837AE} = {BF3B9BE3-66CA-4A8E-A648-780878DB9E90}
+		{3BFE13A6-877F-48C0-9679-F82837C9CCED} = {BF3B9BE3-66CA-4A8E-A648-780878DB9E90}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF7E63E8-6D94-400F-821A-9B6AA2AC0FF7}
+	EndGlobalSection
+EndGlobal
