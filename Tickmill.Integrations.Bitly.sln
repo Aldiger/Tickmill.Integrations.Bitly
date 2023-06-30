@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.API", "src\API\Bitly.API\Bitly.API.csproj", "{D6983234-299D-490E-AC3A-C95E1CC44F04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.API", "src\API\Bitly.API.csproj", "{D6983234-299D-490E-AC3A-C95E1CC44F04}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B9105696-EB78-4244-9EE2-8C326AE91B25}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BF3B9BE3-66CA-4A8E-A648-780878DB9E90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.Core", "Bitly.Core\Bitly.Core.csproj", "{F2E523AF-BC0C-4146-B891-6F031E6CA7E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.Core", "src\Core\Bitly.Core.csproj", "{F2E523AF-BC0C-4146-B891-6F031E6CA7E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.Tests.Unit", "Bitly.Tests.Unit\Bitly.Tests.Unit.csproj", "{FA76E9FF-8349-46F5-82FB-1A7FAF0837AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.Tests.Unit", "tests\Bitly.Tests.Unit\Bitly.Tests.Unit.csproj", "{FA76E9FF-8349-46F5-82FB-1A7FAF0837AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.Tests.Integration", "Bitly.Tests.Integration\Bitly.Tests.Integration.csproj", "{3BFE13A6-877F-48C0-9679-F82837C9CCED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitly.Tests.Integration", "tests\Bitly.Tests.Integration\Bitly.Tests.Integration.csproj", "{3BFE13A6-877F-48C0-9679-F82837C9CCED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

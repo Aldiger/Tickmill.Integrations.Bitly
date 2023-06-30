@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Tickmill.Integrations.Bitly.API</AssemblyName>
+    <RootNamespace>Tickmill.Integrations.Bitly.API</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="data\certs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Tickmill.Common\src\Tickmill.Common.API\Tickmill.Common.API.csproj" />
+    <ProjectReference Include="..\Core\Bitly.Core.csproj" />
+  </ItemGroup>
+
+</Project>
