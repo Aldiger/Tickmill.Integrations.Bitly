@@ -7,7 +7,7 @@ using Tickmill.Common.Logging;
 using Tickmill.Common.Metrics;
 using Tickmill.Common.Vault;
 
-namespace Tickmill.Integrations.Google.API
+namespace Tickmill.Integrations.Bitly.API
 {
     [ExcludeFromCodeCoverage]
     public class Program
