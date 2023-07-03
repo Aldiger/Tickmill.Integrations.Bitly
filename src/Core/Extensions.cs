@@ -25,7 +25,7 @@ namespace Tickmill.Integrations.Bitly.Core
             services.AddHttpClient<IBitlyService, BitlyService>(client =>
             {
                 client.BaseAddress = new Uri(configOptions.BaseApiUrl);
-                client.DefaultRequestHeaders.Add("", "");
+                client.DefaultRequestHeaders.Add("Authorization", $"Bearer {configOptions.ApiKey}");
             });
 
             return services;

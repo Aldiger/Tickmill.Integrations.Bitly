@@ -12,7 +12,7 @@ namespace Bitly.Core.Integrations.Dto
         [JsonPropertyName("long_url")]
         public string LongUrl { get; set; }
         [JsonPropertyName("archived")]
-        public string Archived { get; set; }
+        public bool Archived { get; set; }
         [JsonPropertyName("created_at")]
         public string CreatedAt { get; set; }
         [JsonPropertyName("custom_bitlinks")]

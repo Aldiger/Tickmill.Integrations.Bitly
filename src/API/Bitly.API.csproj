@@ -9,12 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="data\certs\" />
+    <ProjectReference Include="..\..\..\Tickmill.Common\src\Tickmill.Common.API\Tickmill.Common.API.csproj" />
+    <ProjectReference Include="..\Core\Bitly.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Tickmill.Common\src\Tickmill.Common.API\Tickmill.Common.API.csproj" />
-    <ProjectReference Include="..\Core\Bitly.Core.csproj" />
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

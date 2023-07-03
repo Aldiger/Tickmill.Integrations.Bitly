@@ -7,7 +7,7 @@ namespace Bitly.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ShortenUrlController: ControllerBase
+    public class ShortenUrlController : ControllerBase
     {
         private readonly IDispatcher _dispatcher;
         public ShortenUrlController(IDispatcher dispatcher)
@@ -16,9 +16,9 @@ namespace Bitly.API.Controllers
         }
 
         [HttpGet("generate")]
-        public async Task<ActionResult<ShortenUrlDto>> Generate([FromQuery] GetShortenUrl query, CancellationToken token) 
+        public async Task<ActionResult<ShortenUrlDto>> Generate([FromQuery] GetShortenUrl query, CancellationToken token)
         {
-            return await _dispatcher.QueryAsync(query, token);
+            return Ok(await _dispatcher.QueryAsync(query, token));
         }
     }
 }

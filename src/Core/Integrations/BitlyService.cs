@@ -30,14 +30,16 @@ namespace Bitly.Core.Integrations
         {
             try
             {
-                var response = await _httpClient.PostAsJsonAsync($"/shorten",request, token);
+                var response = await _httpClient.PostAsJsonAsync($"v4/shorten", request, token);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    return await response.Content.ReadFromJsonAsync<BitlyShortenUrlDto>();
+                    var result = await response.Content.ReadFromJsonAsync<BitlyShortenUrlDto>();
+                    return result;
                 }
                 else
                 {
+                    _logger.LogError("Bitly api service error: {exception}", response.ReasonPhrase);
                     throw new ServiceApiException(response.ReasonPhrase);
                 }
             }

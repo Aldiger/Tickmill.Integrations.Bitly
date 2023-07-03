@@ -5,6 +5,7 @@ using Convey.MessageBrokers;
 using System.Diagnostics.CodeAnalysis;
 using Tickmill.Common.API;
 using Tickmill.Common.EntityFramework;
+using Tickmill.Integrations.Bitly.Core;
 
 namespace Bitly.API
 {
@@ -30,7 +31,7 @@ namespace Bitly.API
         {
             base.OnServicesConfigured(services);
             services.AddSingleton<IDataSeeder, EmptyDataSeeder>();
-            services.AddCors();
+            services.AddCore();
             ConfigureTestServices(services);
         }
 
