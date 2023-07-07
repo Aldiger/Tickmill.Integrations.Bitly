@@ -1,9 +1,9 @@
-﻿using Bitly.Core.Integrations;
-using Bitly.Core.Integrations.Dto;
+﻿using Tickmill.Integrations.Bitly.Core.Integrations;
+using Tickmill.Integrations.Bitly.Core.Integrations.Dto;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Bitly.Tests.Integration.Common.Services
+namespace Tickmill.Integrations.Bitly.Tests.Integration.Common.Services
 {
     public class TestBitlyService : IBitlyService
     {

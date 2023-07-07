@@ -1,9 +1,9 @@
-﻿using Bitly.Core.Dto;
-using Bitly.Core.Queries;
+﻿using Tickmill.Integrations.Bitly.Core.Dto;
+using Tickmill.Integrations.Bitly.Core.Queries;
 using Microsoft.AspNetCore.Mvc;
 using Tickmill.Common.Types;
 
-namespace Bitly.API.Controllers
+namespace Tickmill.Integrations.Bitly.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

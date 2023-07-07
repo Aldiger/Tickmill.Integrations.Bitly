@@ -1,4 +1,4 @@
-﻿namespace Bitly.Core.Options
+﻿namespace Tickmill.Integrations.Bitly.Core.Options
 {
     public class BitlyOptions
     {

@@ -1,13 +1,13 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
-using Bitly.Tests.Integration.Common;
+using Tickmill.Integrations.Bitly.Tests.Integration.Common;
 using Shouldly;
 using Xunit;
 using System.Diagnostics.CodeAnalysis;
-using Bitly.Core.Queries;
-using Bitly.Core.Dto;
+using Tickmill.Integrations.Bitly.Core.Queries;
+using Tickmill.Integrations.Bitly.Core.Dto;
 
-namespace Bitly.Tests.Integration.Controller
+namespace Tickmill.Integrations.Bitly.Tests.Integration.Controller
 {
     [ExcludeFromCodeCoverage]
     public class ShortenUrlControllerTests : ControllerTestsBase

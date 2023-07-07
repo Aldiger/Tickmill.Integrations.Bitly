@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Bitly.Core.Integrations.Dto
+namespace Tickmill.Integrations.Bitly.Core.Integrations.Dto
 {
     public class BitlyDeeplinkDto
     {

@@ -1,6 +1,6 @@
-﻿using Bitly.Core.Integrations.Dto;
+﻿using Tickmill.Integrations.Bitly.Core.Integrations.Dto;
 
-namespace Bitly.Core.Dto
+namespace Tickmill.Integrations.Bitly.Core.Dto
 {
     internal static class Extensions
     {

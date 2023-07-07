@@ -1,13 +1,13 @@
-﻿using Bitly.Core.Dto;
-using Bitly.Core.Integrations;
-using Bitly.Core.Integrations.Dto;
-using Bitly.Core.Options;
+﻿using Tickmill.Integrations.Bitly.Core.Dto;
+using Tickmill.Integrations.Bitly.Core.Integrations;
+using Tickmill.Integrations.Bitly.Core.Integrations.Dto;
+using Tickmill.Integrations.Bitly.Core.Options;
 using Convey.CQRS.Queries;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Tickmill.Integrations.Bitly.Core.Exceptions;
 
-namespace Bitly.Core.Queries.Handlers
+namespace Tickmill.Integrations.Bitly.Core.Queries.Handlers
 {
     public class GetShortenUrlHandler : IQueryHandler<GetShortenUrl, ShortenUrlDto>
     {
@@ -25,13 +25,10 @@ namespace Bitly.Core.Queries.Handlers
             _logger = logger;
         }
 
-        public async Task<ShortenUrlDto> HandleAsync(GetShortenUrl query, CancellationToken token)
+        public async Task<ShortenUrlDto> HandleAsync(GetShortenUrl query, CancellationToken token = default)
         {
-            if (query == null)
-                throw new ArgumentNullException(nameof(query));
-
             if (string.IsNullOrWhiteSpace(query.Url))
-                throw new ArgumentNullException("Url cannot be empty.");
+                throw new UrlCannotBeEmptyException();
 
             if (!IsValidUrl(query.Url))
                 throw new UrlCannotBeInvalidException();

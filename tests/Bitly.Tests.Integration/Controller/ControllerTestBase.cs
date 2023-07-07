@@ -4,8 +4,8 @@ using System.IO;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using Bitly.API;
-using Bitly.Tests.Integration.Common;
+using Tickmill.Integrations.Bitly.API;
+using Tickmill.Integrations.Bitly.Tests.Integration.Common;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
@@ -14,7 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Xunit;
 
-namespace Bitly.Tests.Integration.Controller
+namespace Tickmill.Integrations.Bitly.Tests.Integration.Controller
 {
     [ExcludeFromCodeCoverage]
     [Collection("sequential")]

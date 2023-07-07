@@ -1,5 +1,5 @@
 using Autofac.Extensions.DependencyInjection;
-using Bitly.API;
+using Tickmill.Integrations.Bitly.API;
 using System.Diagnostics.CodeAnalysis;
 using Tickmill.Common.API;
 using Tickmill.Common.Authentication.Security;

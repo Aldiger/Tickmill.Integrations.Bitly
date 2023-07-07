@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using Bitly.Core.Queries;
+using Tickmill.Integrations.Bitly.Core.Queries;
 using Convey.CQRS.Commands;
 using Convey.MessageBrokers;
 using System.Diagnostics.CodeAnalysis;
@@ -7,7 +7,7 @@ using Tickmill.Common.API;
 using Tickmill.Common.EntityFramework;
 using Tickmill.Integrations.Bitly.Core;
 
-namespace Bitly.API
+namespace Tickmill.Integrations.Bitly.API
 {
     [ExcludeFromCodeCoverage]
     public class Startup : BaseStartup

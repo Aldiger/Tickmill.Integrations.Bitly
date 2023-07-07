@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Options;
 using Tickmill.Common;
 
-namespace Bitly.API.Controllers
+namespace Tickmill.Integrations.Bitly.API.Controllers
 {
     [Route("")]
     public class HomeController: ControllerBase

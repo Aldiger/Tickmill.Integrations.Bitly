@@ -2,8 +2,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using System.Runtime.CompilerServices;
 using Tickmill.Common;
-using Bitly.Core.Options;
-using Bitly.Core.Integrations;
+using Tickmill.Integrations.Bitly.Core.Options;
+using Tickmill.Integrations.Bitly.Core.Integrations;
 
 [assembly: InternalsVisibleTo("Tickmill.Integrations.Bitly.API")]
 [assembly: InternalsVisibleTo("Tickmill.Integrations.Bitly.Tests.Integration")]

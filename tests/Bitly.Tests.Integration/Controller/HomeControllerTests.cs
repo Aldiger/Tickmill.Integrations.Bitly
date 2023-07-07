@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
-using Bitly.Tests.Integration.Common;
+using Tickmill.Integrations.Bitly.Tests.Integration.Common;
 using Shouldly;
 using Xunit;
 
-namespace Bitly.Tests.Integration.Controller
+namespace Tickmill.Integrations.Bitly.Tests.Integration.Controller
 {
     [ExcludeFromCodeCoverage]
     public class HomeControllerTests : ControllerTestsBase

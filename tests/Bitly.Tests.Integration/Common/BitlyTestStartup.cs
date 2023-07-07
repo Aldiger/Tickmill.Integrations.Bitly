@@ -1,11 +1,11 @@
-﻿using Bitly.API;
-using Bitly.Core.Integrations;
-using Bitly.Tests.Integration.Common.Services;
+﻿using Tickmill.Integrations.Bitly.API;
+using Tickmill.Integrations.Bitly.Core.Integrations;
+using Tickmill.Integrations.Bitly.Tests.Integration.Common.Services;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Diagnostics.CodeAnalysis;
-namespace Bitly.Tests.Integration.Common
+namespace Tickmill.Integrations.Bitly.Tests.Integration.Common
 {
     [ExcludeFromCodeCoverage]
     public class BitlyTestStartup : Startup

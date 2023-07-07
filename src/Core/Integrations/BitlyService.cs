@@ -1,11 +1,11 @@
-﻿using Bitly.Core.Integrations.Dto;
-using Bitly.Core.Options;
+﻿using Tickmill.Integrations.Bitly.Core.Integrations.Dto;
+using Tickmill.Integrations.Bitly.Core.Options;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.Net.Http.Json;
 using Tickmill.Integrations.Bitly.Core.Exceptions;
 
-namespace Bitly.Core.Integrations
+namespace Tickmill.Integrations.Bitly.Core.Integrations
 {
     public class BitlyService : IBitlyService
     {
@@ -26,7 +26,7 @@ namespace Bitly.Core.Integrations
 
         }
 
-        public async Task<BitlyShortenUrlDto> ShortenUrl(BitlyShortenUrlRequestDto request, CancellationToken token)
+        public async Task<BitlyShortenUrlDto> ShortenUrl(BitlyShortenUrlRequestDto request, CancellationToken token = default)
         {
             try
             {

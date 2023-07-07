@@ -1,9 +1,9 @@
-﻿using Bitly.Core.Integrations.Dto;
+﻿using Tickmill.Integrations.Bitly.Core.Integrations.Dto;
 
-namespace Bitly.Core.Integrations
+namespace Tickmill.Integrations.Bitly.Core.Integrations
 {
     public interface IBitlyService
     {
-        Task<BitlyShortenUrlDto> ShortenUrl(BitlyShortenUrlRequestDto request, CancellationToken token);
+        Task<BitlyShortenUrlDto> ShortenUrl(BitlyShortenUrlRequestDto request, CancellationToken token = default);
     }
 }

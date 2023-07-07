@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.Hosting;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Bitly.Tests.Integration.Common
+namespace Tickmill.Integrations.Bitly.Tests.Integration.Common
 {
     [ExcludeFromCodeCoverage]
     public class CustomWebApplicationFactory<T> : WebApplicationFactory<T> where T : class

@@ -1,4 +1,4 @@
-﻿namespace Bitly.Core.Dto
+﻿namespace Tickmill.Integrations.Bitly.Core.Dto
 {
     public class ShortenUrlDto
     {
